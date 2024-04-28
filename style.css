@@ -1,0 +1,34 @@
+body{
+    background-color: #CDCDCD;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.05px;
+}
+.text{
+    background-color: black;
+    color: white;
+    padding-left: 21px;
+}
+.width{
+    margin: 0px 29px;
+}
+.img-width{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.btn-width{
+    width: 217px;
+    height: 66px;
+    border-color: black;
+
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    padding-left: 21px;
+}
