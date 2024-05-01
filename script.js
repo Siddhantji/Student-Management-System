@@ -62,10 +62,12 @@ document.getElementById("search").addEventListener("click",function(event){
   let searchT = input.value.trim().toLowerCase();
   console.log("Search query:", searchT);
   let searched = studentData.filter(value => {
+    let fn = value.first_name.toLowerCase()+" "+value.last_name.toLowerCase();
     return(
       value.first_name.toLowerCase().includes(searchT)|| 
       value.last_name.toLowerCase().includes(searchT)|| 
-      value.email.toLowerCase().includes(searchT));
+      value.email.toLowerCase().includes(searchT));||
+      fn.includes(searchT);
   });
   populateTable(searched);
 
